@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New England Karate Academy, Inc. - Shrewsbury Martial Arts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Top notch karate training in Shrewsbury. Free trial class available.">
+  <meta name="keywords" content="karate, martial arts, kenpo, Shrewsbury, Worcester, training, classes">
+
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: white;
+      color: #000;
+    }
+
+    header {
+      background-color: #0066cc;
+      color: white;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    header .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0 1em;
+    }
+
+    header img {
+      height: 75px;
+      width: 75px;
+    }
+
+    .header-text {
+      flex-grow: 1;
+      padding: 0 1em;
+    }
+
+    .important-note {
+      color: yellow;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    /* NAVIGATION BAR */
+    nav.navbar {
+      background: #0066cc;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links li {
+      margin: 0.5em;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #003366;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0066cc;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links li {
+        text-align: center;
+        border-top: 1px solid #004a99;
+      }
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+
+    section {
+      margin-bottom: 3em;
+    }
+
+    .video-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+    }
+
+    iframe {
+      max-width: 100%;
+      border: none;
+    }
+
+    .program-highlight {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+      text-align: center;
+    }
+
+    .program-highlight img {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      background: #f0f0f0;
+      padding: 2em 1em;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #0066cc;
+      text-decoration: none;
+      margin: 0 0.5em;
+    }
+
+    @media (max-width: 768px) {
+      .header-text,
+      .nav-links {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a name="top"></a>
+  <header>
+    <div class="container">
+      <img src="./images/girl.gif" alt="Karate Girl">
+      <div class="header-text">
+        <h1>New England Karate Academy, Inc.</h1>
+        <p>1 Pineland Ave, Shrewsbury, MA 01545 · Tel: 508-767-0977</p>
+        <p class="important-note">Note: Our Worcester Location Has Merged with Shrewsbury. Thank you!</p>
+      </div>
+      <img src="./images/yin_yang.png" alt="Yin Yang">
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="history.asp">Academy History</a></li>
+        <li><a href="instructors.asp">Instructors</a></li>
+        <li><a href="programs.asp">Programs</a></li>
+        <li><a href="swordclasses.asp">Sword Classes</a></li>
+        <li><a href="birthdayparty.asp">Birthday Parties</a></li>
+        <li><a href="features.asp">Amenities</a></li>
+        <li><a href="additionalinfo.asp">Info</a></li>
+        <li><a href="photos.asp">Photos</a></li>
+        <li><a href="emailus.asp">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="promo">
+      <div style="background: lightblue; text-align: center; padding: 1em; border: 1px solid #000;">
+        <h2><a href="special.asp">$20 Karate - 2 Week Trial</a></h2>
+        <p>Click above for details</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Welcome to the New England Karate Academy</h2>
+      <p>Whether you're a parent, adult, or family, we offer programs for all ages. Come visit for a free, no-obligation trial class and see why we’re the best in the area.</p>
+    </section>
+
+    <section class="video-section">
+      <iframe width="450" height="252" src="https://www.youtube.com/embed/UJyrFreqd_Q?rel=0" allowfullscreen></iframe>
+      <iframe width="450" height="252" src="https://www.youtube.com/embed/CbcTJ_5MF0E?rel=0" allowfullscreen></iframe>
+      <iframe width="450" height="252" src="https://www.youtube.com/embed/bhxBK_P1SV0?rel=0" allowfullscreen></iframe>
+    </section>
+
+    <section class="program-highlight">
+      <div>
+        <a href="programssingle.asp?qs_code=1">
+          <img src="./images/kidshome1.jpg" alt="Kids Karate">
+          <h3>Little Ninja Program (Ages 3–4½)</h3>
+        </a>
+        <p>Led by qualified instructors focused on character development. <a href="programssingle.asp?qs_code=1">(Learn More)</a></p>
+      </div>
+      <div>
+        <a href="programssingle.asp?qs_code=5">
+          <img src="./images/adultshome1.jpg" alt="Adult Karate">
+          <h3>Adult Martial Arts</h3>
+        </a>
+        <p>Headed by 10th degree Grand Master Alan D’Allessandro. <a href="programssingle.asp?qs_code=5">(Learn More)</a></p>
+      </div>
+    </section>
+
+    <section class="program-highlight">
+      <div>
+        <a href="programssingle.asp?qs_code=4">
+          <img src="./images/photogallery/family66lHP.jpg" alt="Family Karate">
+          <h3>Family Classes</h3>
+        </a>
+        <p>Learn self-defense and bond with your family. <a href="programssingle.asp?qs_code=4">(Learn More)</a></p>
+      </div>
+      <div>
+        <a href="programssingle.asp?qs_code=3">
+          <img src="./images/photogallery/triple17lHP.jpg" alt="Team NEKA">
+          <h3>Team NEKA</h3>
+        </a>
+        <p>Join one of New England’s top sport karate teams. <a href="programssingle.asp?qs_code=3">(Learn More)</a></p>
+      </div>
+    </section>
+
+    <section style="text-align:center;">
+      <img src="./images/belttest.jpg" width="775" height="581" alt="Belt Test Celebration">
+      <h3>Belt Test Celebration</h3>
+      <p>Serving Worcester, Shrewsbury, Grafton, Auburn, and beyond.</p>
+    </section>
+
+    <section style="text-align:center; background: lightblue; padding: 1em;">
+      <a href="photos.asp"><h2>Photo Gallery</h2></a>
+      <p>Visit our gallery for more pictures and information.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="default.asp">Home</a> |
+      <a href="#top">Top of Page</a> |
+      <a href="webmaster.asp">Webmaster</a> |
+      <a href="copyrights.asp">Copyrights</a>
+    </p>
+    <p>&copy; 2025 New England Karate Academy, Inc.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
+</body>
+</html>
